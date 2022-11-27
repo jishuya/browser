@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Size</title>
+    <style>
+        .tag {
+            display: inline-block;
+            background-color: thistle;
+            padding: 16px;
+            margin-top: 16px;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tag">Widow Size</div>
+    <script>
+        const tag = document.querySelector('.tag');
+        function updateTag(){
+            tag.innerHTML = `
+            window.screen: ${window.screen.width}, ${window.screen.height}
+            window.outer: ${window.outerWidth}, ${window.outerHeight}
+            window.inner: ${window.innerWidth}, ${window.innerHeight}
+            document client: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
+            `; 
+        }
+        // 브라우저의 사이즈가 변경되면 실행
+        window.addEventListener('resize', ()=> {
+            updateTag();
+        });
+        // 처음실행
+        updateTag();
+    </script>
+</body>
+</html>
