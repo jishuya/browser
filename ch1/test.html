@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test browser</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-top:2px;
+            background-color: aqua;
+            overflow: hidden;
+        }
+        .special{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="special"></div>
+    <div></div>
+    <div></div>
+
+    <script>
+        
+        const tag = document.querySelector('.special')
+        tag.addEventListener('click', event=>{
+            const rect = tag.getBoundingClientRect();
+            console.log(rect)
+            console.log(`client: ${event.clientX} ${event.clientY}`)
+            console.log(`page: ${event.pageX} ${event.pageY}`)
+        });
+
+    </script>
+</body>
+</html>
