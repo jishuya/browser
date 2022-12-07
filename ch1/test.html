@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test browser</title>
+    <title>Scroll browser</title>
     <style>
         div{
             width: 100px;
@@ -12,7 +12,7 @@
             border-radius: 5px;
             margin-top:2px;
             background-color: aqua;
-            overflow: hidden;
+            /* overflow: hidden; */
         }
         .special{
             background-color: coral;
@@ -20,6 +20,11 @@
     </style>
 </head>
 <body>
+    <button onclick="test()">test</button>
+    <button onclick="test2()">Scroll By 100px(y)</button>
+    <button onclick="test3()">Scroll To 100px(y)</button>
+    <button onclick="scrollInto()">Scroll Into Special(y)</button>
+    <div></div>
     <div></div>
     <div></div>
     <div></div>
@@ -31,14 +36,32 @@
     <div></div>
 
     <script>
+        function test(){
+            console.log(33333)
+        }
         
-        const tag = document.querySelector('.special')
-        tag.addEventListener('click', event=>{
-            const rect = tag.getBoundingClientRect();
-            console.log(rect)
-            console.log(`client: ${event.clientX} ${event.clientY}`)
-            console.log(`page: ${event.pageX} ${event.pageY}`)
-        });
+        function test2(){
+            console.log('🎈')
+            window.scrollBy(0, 10)
+        }
+
+        function test3(){
+            console.log('🎈🎈')
+            window.scrollTo(0, 100)
+        }
+
+        function scrollInto(){
+            console.log('🎈🎈🎈')
+            const special = document.querySelector('.special')
+            special.scrollIntoView()
+        }
+        // const tag = document.querySelector('.special')
+        // tag.addEventListener('click', event=>{
+        //     const rect = tag.getBoundingClientRect();
+        //     console.log(rect)
+        //     console.log(`client: ${event.clientX} ${event.clientY}`)
+        //     console.log(`page: ${event.pageX} ${event.pageY}`)
+        // });
 
     </script>
 </body>
