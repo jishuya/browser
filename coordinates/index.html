@@ -18,6 +18,9 @@
         client.innerHTML = `
           ${e.clientX}px, ${e.clientY}px
         `;
+        
+        client.style.left = e.clientX + "px"
+        client.style.top = e.clientY + "px"
       }
 
       // 마우스의 위치가 바뀌면

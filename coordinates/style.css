@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+
+#client {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    cursor: url('./img/target.png'), auto;
+    color: antiquewhite;
+
+
+}
