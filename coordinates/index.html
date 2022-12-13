@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coordinates</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="client">
+
+    </div>
+    <script>
+      const client = document.getElementById('client')
+
+      function updateClient(e){
+        client.innerHTML = `
+          ${e.clientX}px, ${e.clientY}px
+        `;
+      }
+
+      // 마우스의 위치가 바뀌면
+      window.addEventListener('mousemove', (e)=>{
+        updateClient(e);
+      })
+
+      // 처음실행
+        // updateClient();
+    </script>
+  </body>
+</html>
