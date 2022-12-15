@@ -8,28 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="client">
-
-    </div>
-    <script>
-      const client = document.getElementById('client')
-
-      function updateClient(e){
-        client.innerHTML = `
-          ${e.clientX}px, ${e.clientY}px
-        `;
-        
-        client.style.left = e.clientX + "px"
-        client.style.top = e.clientY + "px"
-      }
-
-      // 마우스의 위치가 바뀌면
-      window.addEventListener('mousemove', (e)=>{
-        updateClient(e);
-      })
-
-      // 처음실행
-        // updateClient();
-    </script>
+    <div class="line horizontal"></div>
+    <div class="line vertical"></div>
+    <img class="target" src="./img/target.png" alt="">
+    <div class="tag">111</div>
   </body>
 </html>
