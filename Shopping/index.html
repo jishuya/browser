@@ -11,10 +11,17 @@
 <body>
     <div class="phone">
         <div class="header">Shopping List</div>
-        <div class="content"></div>
-        <div class="insert"></div>
+        <div class="content">
+            <ul id = "list-1">
+                <li> Hello</li>
+                <li> Hello World</li>
+            </ul>
+        </div>
+        <div class="insert">
+            <input type="text" id="name" onchange="addList()">
+        </div>
         <div class="footer">
-            <button class="plus"></button>
+            <button class="plus" onclick="addList()"></button>
         </div>
     </div>
 </body>
