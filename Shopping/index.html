@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping List </title>
-    <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/5370afdb2f.js" crossorigin="anonymous"></script>
+    <style rel="stylesheet" href="./style.css"></style>
 </head>
 <body>
-    <div class="phone">
-        <div class="header">Shopping List</div>
-        <div class="content">
-            <ul id = "list-1">
-                <li> Hello</li>
-                <li> Hello World</li>
-            </ul>
-        </div>
-        <div class="insert">
-            <input type="text" id="name" onchange="addList()">
-        </div>
-        <div class="footer">
-            <button class="plus" onclick="addList()"></button>
-        </div>
-    </div>
+    <section class="list">
+        <header class="header">ShoppingList</header>
+        <ul class="items">
+            <li class="item__row">
+                <div class="item">
+                    <span class="item__name">Egg</span>
+                    <button class="item__delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+        <footer class="footer">
+            <input type="text" class="footer__input">
+            <button class="footer__button">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </footer>    
+    </section>
 </body>
 </html>

@@ -1,53 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
 body {
-    background-color: #c8cdda;
-}
-
-.phone {
-    background-color: white;
-    height: 800px;
-    width: 500px;
-    border-radius: 20px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.header {
-    background-color: #efeef5;
-    height: 90px;
-    line-height: 90px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-}
-
-.content{
-    background-color:antiquewhite;
-    height: 580px;
-}
-
-.insert{
-    background-color:ghostwhite;
-    height: 40px;
-}
-
-
-
-.footer {
-    background-color: #efeef5;
-    height: 90px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-}
-
-.plus {
-    background-color: black;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    margin: auto;
+    background-color: #ced3df;
+    
 }
