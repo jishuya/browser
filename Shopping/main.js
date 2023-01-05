@@ -31,7 +31,7 @@ function createItem(text){
     name.setAttribute('class', 'item__name');
     name.innerText = text;
 
-    const deleteBtn = document.querySelector('button');
+    const deleteBtn = document.createElement('button');
     deleteBtn.setAttribute('class', 'item__delete');
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
 
