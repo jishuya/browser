@@ -22,35 +22,6 @@ function onAdd(){
 
 let id = 0;
 function createItem(text){
-    // const itemRow = document.createElement('li');
-    // itemRow.setAttribute('class', 'item__row');
-
-    // const item = document.createElement('div');
-    // item.setAttribute('class', 'item');
-
-    // const name = document.createElement('span');
-    // name.setAttribute('class', 'item__name');
-    // name.innerText = text;
-
-    // const deleteBtn = document.createElement('button');
-    // deleteBtn.setAttribute('class', 'item__delete');
-    // deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
-
-    // deleteBtn.addEventListener('click', ()=>{
-    //     items.removeChild(itemRow)
-    // })
-
-    // const itemDivider = document.createElement('div');
-    // itemDivider.setAttribute('class', 'item__divider');
-
-    // item.appendChild(name);
-    // item.appendChild(deleteBtn);
-    // console.log(item)
-
-    // itemRow.appendChild(item);
-    // itemRow.appendChild(itemDivider);
-    // return itemRow
-
     const itemRow = document.createElement('li');
     itemRow.setAttribute('class', 'item__row');
     itemRow.setAttribute('data-id', id);
